@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="type">
+        <item>PAPS</item>
+        <item>DPS-PE</item>
+        <item>DPS-ME</item>
+        <item>DPS-GE</item>
+    </string-array>
+
+    <string-array name="lot">
+        <item>Lot A</item>
+        <item>Lot B</item>
+        <item>Lot C</item>
+    </string-array>
+
+</resources>

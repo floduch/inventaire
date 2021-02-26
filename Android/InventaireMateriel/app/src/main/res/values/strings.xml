@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Inventaire Materiel</string>
+    <string name="reassort">Réassort du matériel</string>
+    <string name="nouveau">Nouveau</string>
+    <string name="nomp">Nom Prénom</string>
+    <string name="dateP">Date du poste</string>
+    <string name="dateJ">Date du jour</string>
+    <string name="valide">Valider</string>
+    <string name="mat">Matériel utilisé</string>
+    <string name="quant">Quantité</string>
+    <string name="nouvMat">Nouveau Matériel</string>
+    <string name="info">Attention : Enregistre le matériel actuel</string>
+    <string name="infos">Le matériel utilisé à été enregistré. Pour modifier refaîtes la démarche, la modification sera interne</string>
+    <string name="fin">Valider et fermer l\'application</string>
+
+</resources>

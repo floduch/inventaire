@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity7">
+
+        <TextView
+            android:id="@+id/textVEH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Veh"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerSection"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textVEH" />
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toEndOf="@+id/spinnerSection"
+            app:layout_constraintTop_toBottomOf="@+id/textVEH" />
+
+        <Spinner
+            android:id="@+id/spinnerImmat"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerType" />
+
+        <TextView
+            android:id="@+id/textLots"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/Lots"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerImmat" />
+
+        <EditText
+            android:id="@+id/editLotA"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/textViewLotA"
+            app:layout_constraintStart_toStartOf="@+id/textViewLotA"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLotA" />
+
+        <EditText
+            android:id="@+id/editLotB"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/textViewLotB"
+            app:layout_constraintHorizontal_bias="0.416"
+            app:layout_constraintStart_toStartOf="@+id/textViewLotB"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLotB"/>
+
+        <EditText
+            android:id="@+id/editLotC"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/textViewLotC"
+            app:layout_constraintStart_toStartOf="@+id/textViewLotC"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLotC" />
+
+        <Button
+            android:id="@+id/buttonVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/Valider"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editLotC" />
+
+        <TextView
+            android:id="@+id/textViewLotA"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLots" />
+
+        <TextView
+            android:id="@+id/textViewLotB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/B"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/textViewLotC"
+            app:layout_constraintStart_toEndOf="@+id/textViewLotA"
+            app:layout_constraintTop_toBottomOf="@+id/textLots" />
+
+        <TextView
+            android:id="@+id/textViewLotC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/C"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLots" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

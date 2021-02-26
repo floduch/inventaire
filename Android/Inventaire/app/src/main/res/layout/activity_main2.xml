@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textRea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/reassort"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/reassort"/>
+
+    <TextView
+        android:id="@+id/textNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/nomp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textRea"
+        app:layout_constraintTop_toBottomOf="@+id/textRea" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNom"
+        android:contentDescription="@string/nomp"/>
+
+    <TextView
+        android:id="@+id/viewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/dateP"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/autoCompleteTextNom"
+        app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextNom"
+        android:contentDescription="@string/dateP"/>
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewDate" />
+
+    <Button
+        android:id="@+id/buttonDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dateJ"
+        app:icon="@drawable/ic_round_calendar_today_24"
+        app:layout_constraintStart_toStartOf="@+id/editDate"
+        app:layout_constraintTop_toBottomOf="@+id/editDate"
+        android:contentDescription="@string/dateJ"/>
+
+    <Button
+        android:id="@+id/buttonVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        app:icon="@drawable/ic_baseline_check_24"
+        android:text="@string/valide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDate"
+        android:contentDescription="@string/valide"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

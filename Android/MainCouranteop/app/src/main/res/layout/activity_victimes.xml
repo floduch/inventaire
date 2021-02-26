@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Victimes">
+
+        <TextView
+            android:id="@+id/textVictime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/victime"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableLayout
+            android:id="@+id/layoutVictime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textVictime">
+
+            <TableRow
+                android:id="@+id/tabNumVictime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textNumVictime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nVictime"
+                    android:textSize="20dp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabEditNumVictime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editNumVictime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:inputType="number"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabConVictime"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/editConVictime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identi"
+                    android:textSize="20dp"/>
+
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/tabButtonConVictime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/buttonConOVictime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="@string/oui"
+                    android:background="@drawable/rounded_corner"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/buttonConNVictime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20dp"
+                    android:text="@string/non"
+                    android:background="@drawable/rounded_corner"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+            <TableRow
+                android:id="@+id/tabNomVictime"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textNomVictime"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/nom"-->
+<!--                    android:textSize="20dp"/>-->
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabEditNomVictime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+<!--                <EditText-->
+<!--                    android:id="@+id/editNomVictime"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="20dp"/>-->
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabPNomVictime"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textPNomVictime"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="@string/nom"-->
+    <!--                android:textSize="20dp"/>-->
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabEditPNomVictime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/editPNomVictime"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textSize="20dp"/>-->
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabButtonSexeVictime"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textSexeVictime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sexe"
+                    android:textSize="20dp"/>
+
+            </TableRow>
+
+            <LinearLayout
+            android:id="@+id/tabButtonSexe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/tabButtonSexeM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/masc"
+                    android:background="@drawable/rounded_corner"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/tabButtonSexeF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/fem"
+                    android:background="@drawable/rounded_corner"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/tabButtonSexeI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/ind"
+                    android:background="@drawable/rounded_corner"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+
+            <TableRow
+                android:id="@+id/tabDNVictime"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/textDNVictime"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="@string/dateN"-->
+<!--                                android:textSize="20dp"/>-->
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabEditDNVictime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/editDNVictime"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="date"-->
+<!--                                android:textSize="20dp"/>-->
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabAgeVictime"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textAgeVictime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/age"
+                        android:textSize="20dp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabEditAgeVictime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/editAgeVictime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textSize="20dp"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity4">
+
+        <TextView
+            android:id="@+id/Ajout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="30dp"
+            android:text="@string/Nouv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layoutAjout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/buttonCO"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSTAG">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_valid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/Valider"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutAjout" />
+
+        <Button
+            android:id="@+id/buttonCO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/CO"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintStart_toStartOf="@+id/Ajout"
+            app:layout_constraintTop_toBottomOf="@+id/Ajout" />
+
+        <Button
+            android:id="@+id/buttonPSE2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/PSE2"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintStart_toEndOf="@+id/buttonCO"
+            app:layout_constraintTop_toBottomOf="@+id/Ajout" />
+
+        <Button
+            android:id="@+id/buttonPSE1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/PSE1"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintEnd_toEndOf="@+id/button_valid"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/buttonPSE2"
+            app:layout_constraintTop_toBottomOf="@+id/Ajout" />
+
+        <Button
+            android:id="@+id/buttonLAT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LAT"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintStart_toStartOf="@+id/buttonCO"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPSE2" />
+
+        <Button
+            android:id="@+id/buttonSTAG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Stag"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/buttonLAT"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPSE2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

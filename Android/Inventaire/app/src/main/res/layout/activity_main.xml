@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="match_parent"
+            android:layout_height="299dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_mat_foreground"
+            android:contentDescription="@string/descImage"/>
+
+        <TextView
+            android:id="@+id/textRea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:text="@string/reassort"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+            android:contentDescription="@string/reassort"/>
+
+        <Button
+            android:id="@+id/buttonNew"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="92dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/nouveau"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+
+            app:icon="@drawable/ic_round_add_24"
+            app:layout_constraintEnd_toEndOf="@+id/textRea"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toStartOf="@+id/textRea"
+            app:layout_constraintTop_toBottomOf="@+id/textRea"
+            android:contentDescription="@string/nouveau"/>
+
+        <Button
+            android:id="@+id/buttonAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/admin"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:icon="@drawable/ic_round_edit_24"
+            app:layout_constraintEnd_toEndOf="@+id/buttonNew"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toStartOf="@+id/buttonNew"
+            app:layout_constraintTop_toBottomOf="@+id/buttonNew"
+            android:contentDescription="@string/admin"/>
+
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

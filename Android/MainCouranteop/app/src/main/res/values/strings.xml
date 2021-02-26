@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Main Courante</string>
+
+    <string name="Valider">Valider</string>
+    <!--    Activité 1-->
+    <string name="Titre">FÉDÉRATION DES SECOURISTES FRANÇAIS CROIX BLANCHE</string>
+    <string name="Nouvelle">Appuyez sur le logo pour créer une nouvelle main courante</string>
+
+    <!--    Activité 2-->
+    <string name="infos">Informations</string>
+    <string name="NatureManifestation">Nature de la manifestation</string>
+    <string name="LieuManifestation">Lieu de la manifestation</string>
+    <string name="Adresse">Adresse</string>
+    <string name="Date">Date du Jour</string>
+    <string name="Poste">Numéro de Poste</string>
+    <string name="Type">Nature du DPS</string>
+    <string name="Loca">Localisation actuelle</string>
+
+    <!--    Activité 3-->
+    <string name="heures">Heures du poste</string>
+    <string name="HDebutDPS">Heure de début du DPS</string>
+    <string name="HFinDPS">Heure de fin du DPS</string>
+    <string name="HDebutLOC">Heure de départ du local</string>
+    <string name="HFinLOC">Heure de retour au local</string>
+    <string name="SelectHeure">Selectionner</string>
+
+    <!--    Activité 4-->
+    <string name="Personnel">Personnel</string>
+    <string name="Ajout">Ajouter du personnel</string>
+
+    <!--    Activité 5-->
+    <string name="Nouv">Ajout de personnel</string>
+    <string name="CO">Ajouter CO</string>
+    <string name="PSE2">Ajouter PSE2</string>
+    <string name="PSE1">Ajouter PSE1</string>
+    <string name="LAT">Ajouter LAT</string>
+    <string name="Med">Médecin</string>
+    <string name="Stag"> Ajouter Stagiaire</string>
+
+    <!--    Activité 7-->
+    <string name="Veh">Véhicule(s)</string>
+    <string name="Lots">Lots</string>
+    <string name="A">Lot A</string>
+    <string name="B">Lot B</string>
+    <string name="C">Lot C</string>
+
+
+    <string name="Chef">Chef de Poste</string>
+    <string name="bin1">Equipe 1 + Binôme 1</string>
+    <string name="bin2">Equipe 2 + Binôme 2</string>
+    <string name="Chefs">Chef</string>
+
+    <!--    Activité Evenement-->
+    <string name="even">Événements</string>
+    <string name="arrivee">Arrivée des secouristes</string>
+    <string name="ope">Poste opérationnel</string>
+    <string name="SAMU">SAMU contacté pour l\'ouverture</string>
+    <string name="orga">Visite de l\'organisateur</string>
+    <string name="oui">Oui</string>
+    <string name="dbin">Départ binôme</string>
+    <string name="rbin">Retour binôme</string>
+    <string name="ligne">_____________________________________________</string>
+    <string name="numB">Numéro du binôme</string>
+
+<!--    PopUp-->
+    <string name="titre">je suis un popup</string>
+
+<!--    Activité Victime-->
+    <string name="victime">Victime</string>
+    <string name="nVictime">Numéro de victime</string>
+    <string name="non">Non</string>
+    <string name="identi">Identité connue</string>
+    <string name="nom">Nom</string>
+    <string name="pnom">Prénom</string>
+    <string name="masc">Masculin</string>
+    <string name="fem">Féminin</string>
+    <string name="ind">Indéterminé</string>
+    <string name="sexe">Sexe</string>
+    <string name="dateN">Date de naissance</string>
+    <string name="age">Âge approximatif</string>
+
+
+</resources>

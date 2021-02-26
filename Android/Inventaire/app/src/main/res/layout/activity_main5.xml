@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity5">
+
+        <TextView
+            android:id="@+id/textRea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/reassort"
+            android:fontFamily="@font/productsansregular"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/reassort"/>
+
+        <TextView
+            android:id="@+id/textExplication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/explication"
+            android:fontFamily="@font/productsansregular"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.302"
+            app:layout_constraintStart_toStartOf="@+id/textRea"
+            app:layout_constraintTop_toBottomOf="@+id/textRea"
+            android:contentDescription="@string/explication"/>
+
+        <Button
+            android:id="@+id/buttonAjout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/ajouter"
+            app:icon="@drawable/ic_round_add_241"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textExplication"
+            android:contentDescription="@string/ajouter"/>
+
+        <Button
+            android:id="@+id/buttonSoust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/soustraire"
+            app:icon="@drawable/ic_baseline_remove_24"
+            app:layout_constraintStart_toEndOf="@+id/buttonAjout"
+            app:layout_constraintTop_toBottomOf="@+id/textExplication"
+            android:contentDescription="@string/soustraire"/>
+
+        <ScrollView
+            android:id="@+id/scrol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAjout"
+            app:layout_constraintVertical_bias="0.161">
+
+            <LinearLayout
+                android:id="@+id/textResum"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonAjout" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/buttonVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/terminer"
+            app:icon="@drawable/ic_baseline_check_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrol"
+            android:contentDescription="@string/valide"/>
+
+        <Button
+            android:id="@+id/buttonAnn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/annuler"
+            app:icon="@drawable/ic_round_close_24"
+            app:layout_constraintEnd_toStartOf="@id/buttonVal"
+            app:layout_constraintTop_toBottomOf="@+id/scrol"
+            android:contentDescription="@string/annuler"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
